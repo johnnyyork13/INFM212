@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(yellow, red);
+}
+
+header {
+    background-color: rgb(255, 143, 143);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+main div:first-child {
+    border-radius: 30px;
+    background-color: rgb(236, 71, 71);
+}
+
+main div:nth-child(2) {
+    background-color: rgb(152, 152, 254);
+    color: white;
+    text-shadow: 10px 5px rgb(70, 38, 231);
+}
+
+main div:nth-child(3) {
+    background-color: rgb(236, 71, 71);
+    box-shadow: 10px 10px rgb(128, 127, 127);
+}
+
+main div:nth-child(4) {
+    background: linear-gradient(120deg, aqua, navy);
+    color: white;
+}
+
+main div:nth-child(5) {
+    background:linear-gradient(navy, aqua);
+    color: white;
+    opacity: .3;
+}

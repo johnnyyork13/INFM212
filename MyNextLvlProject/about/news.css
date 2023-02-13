@@ -1,0 +1,29 @@
+main {
+    width: auto;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsContainer {
+    width: 80%;
+    height: 70%;
+    border: var(--border);
+    border-radius: 50px;
+}
+
+.newsContainer p {
+    margin: 40px;
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+    }
+
+    .newsContainer  {
+        height: fit-content;
+    }
+}

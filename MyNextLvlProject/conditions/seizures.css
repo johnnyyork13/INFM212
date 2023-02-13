@@ -1,0 +1,102 @@
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    padding-bottom: 60px;
+}
+
+.mainContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "one two three"
+    "four five five"
+    "six six six"
+    "seven seven seven"
+    "eight eight eight"
+    "nine nine nine";
+    gap: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    text-align: left;
+    border: var(--border);
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBox img {
+    width: 80%;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+    }
+
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+    }
+}

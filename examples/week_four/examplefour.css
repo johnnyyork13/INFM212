@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Wise";
+    src: url(./fonts/WISE.otf);
+}
+
+@font-face {
+    font-family: "Balbek";
+    src: url(./fonts/Balbek.otf);
+}
+
+@font-face {
+    font-family: "Moody";
+    src: url(./fonts/Moody.otf);
+}
+
+@font-face {
+    font-family: "Qalisha";
+    src: url(./fonts/Qalisha.ttf);
+}
+
+@font-face {
+    font-family: "Stay Winter";
+    src: url(./fonts/stay.otf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(177, 177, 252);
+    display: flex;
+    justify-content: center;
+}
+
+h1:nth-child(2) {
+    font-family: "Wise";
+}
+
+h1:nth-child(3) {
+    font-family: "Balbek";
+}
+
+h1:nth-child(4) {
+    font-family: "Moody";
+}
+
+h1:nth-child(5) {
+    font-family: "Qalisha";
+}
+
+h1:nth-child(6) {
+    font-family: "Stay Winter";
+}

@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    background-color: #88b2d2;
+}
+
+h1, h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+h1 {
+    font-size: 2.1875em;
+}
+
+h2 {
+    color: #7d717c;
+    background-color: #eaebef;
+    font-size: 1.75em;
+}
+
+.architect {
+    background-color: #fff;
+    padding: 1.5em 1.75em;
+}
+
+.intro {
+    background-color: #686a63;
+    color: #fff;
+    line-height: 1.45;
+    padding: 1px 1.875em .7em;
+}
+
+em, a:link, .intro .subhead {
+    font-weight: bold;
+}
+
+.intro .subhead {
+    font-size: 1.125em;
+}
+
+.intro p {
+    font-size: 1.0625em;
+}
+
+.project p {
+    font-size: .9375em;
+    line-height: 1.65;
+}
+

@@ -1,0 +1,29 @@
+main {
+    width: auto;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contributeContainer {
+    width: 80%;
+    height: 70%;
+    border: var(--border);
+    border-radius: 50px;
+}
+
+.contributeContainer p {
+    margin: 40px;
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+    }
+
+    .contributeContainer {
+        height: fit-content;
+    }
+}

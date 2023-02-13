@@ -1,0 +1,138 @@
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    padding-bottom: 50px;
+}
+
+.mainContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 100px repeat(4, 1fr);
+    grid-template-areas: 
+    "one two three"
+    "four five five"
+    ". nutrients ."
+    "six seven eight"
+    "nine ten eleven"
+    ". twelve ."
+    "thirteen thirteen thirteen";
+    gap: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    text-align: left;
+    border: var(--border);
+    border-radius: 20px;
+    height: 80%;
+    padding: 20px;
+}
+
+#imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBox img {
+    width: 80%;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#ten {
+    grid-area: ten;
+}
+
+#eleven {
+    grid-area: eleven;
+}
+
+#twelve {
+    grid-area: twelve;
+}
+
+#thirteen {
+    grid-area: thirteen;
+}
+
+#nutrients {
+    grid-area: nutrients;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+#nutrients h3 {
+    text-align: center;
+    width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+    }
+
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr) 80px repeat(8, 1fr);
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "nutrients"
+        "six"
+        "seven"
+        "eight"
+        "nine"
+        "ten"
+        "eleven"
+        "twelve"
+        "thirteen";
+    }
+}
+

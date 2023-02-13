@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 158);
+}
+
+header ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin: 0;
+}
+
+header li {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+.post-photo-full {
+    float: left;
+    margin-bottom: 2px;
+    margin-right: 22px;
+}
+
+.post-photo {
+    float: right;
+    margin-bottom: 2px;
+    margin-left: 22px;
+}
+
+.post-footer {
+    clear: left;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: rgb(247, 247, 158);
+    padding: 62px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about img {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.about {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="exampletwo.css">
+    <title>Selecting Elements by Name</title>
+</head>
+<body>
+    <h1>Selecting Elements by Name with CSS</h1>
+    <div class="container">
+        <header role="banner">
+            <nav rol="navigation">
+                <ul title="Table of Contents">
+                    <li><a title="Learn more about Antoni Gaudi" href="#gaudi">Barcelona's Architect</a></li>
+                    <li lang="es"><a href="#sagrada-familia">La Sagrada Familia</a></li>
+                    <li><a href="#park-guell">Park Guell</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- START MAIN CONTENT-->
+        <main role="main">
+            <article class="architect gaudi">
+                <h1 id="gaudi">Barcelona's Architect</h1>
+                <p>Antoni Gaudi's incredible buildings bring millions of tourists to Barcelona each year.</p>
+                <p>Gaudi's non-conformity, already visible in his teenage years, couopled with his quiet but firm devotion to the church, made a unique foundation for his thoughts and ideas. His search for
+                    simplicity, based on his careful observations of nature, is quite apparent in his work, from the <a href="dummy link">Park Guell</a> and its incredible sculptures and mosaics, to
+                    the Church of the <a href="dummy link">Sarcred Family</a> and its organic, bulbous towers.
+                </p>
+                <h2 id="sagarda-familia" lang="es">La Sagrada Familia</h2>
+                <p><img src="../../images/towers.jpeg" style="width: 75px; height: 100;" alt="Sagrada Familia Towers"> The complicatedly named and curiously unfinished masterpiece that is the Expiatory Temple of
+                the Sacred Family is the most visited building in Barcelona. In it, Gaudi combines his vision of nature and architecture with his devotion to
+            his faith. The Sagrada Familia attracts even the non-religious to its doors in large part due to its tragic story and its still unfinished state, of which the everpresent scaffolding and
+        cranes are permanent reminderes.</p>
+                <h2 id="park-guell">Park Guell</h2>
+                <img src="../../images/park.jpeg" alt="Park Guell" style="width: 75px; height: 100px;">
+                <p>The Park Guell always reminds me of Howard Roark in Ayn Rand's <a href="dummy link"><em>The Foundainhead</em></a>. Gaudi's project in the Park Guell was to build a residential
+                community whose residents would love where they lived. It was never finished. </p>
+                <p>Perhaps that is for the beset, since now we <em>all</em> get to enjoy it, The Park Guell is set
+                on a hill overlooking practically all of Barcelona. Its beautiful and even comfortable serpentine bench is filed with foreginers and locals
+            alike every day of the week. Its mosaic lizards have become synonymous with the city itself.</p>
+            </article>
+        </main>
+        <!-- END MAIN CONTENT-->
+        <!-- START SIDEBAR-->
+        <aside role="complimentary">
+            <h2>Architectural Wonders of Barcelona</h2>
+            <p>Barcelona is home to many architectural wonderes in addition to Gaudi's work. Some of them include:
+                <nav>
+                    <ul>
+                        <li>Arc de Triomf</li>
+                        <li>The cathedral (La Seu)</li>
+                        <li>Gran Teatre del Liceu</li>
+                        <li>Pavilion Mies van der Rohe</li>
+                        <li>Santa Maria del Mar</li>
+                    </ul>
+                </nav>
+            </p>
+            <p><small>Credit: <a href="http://www.barcelona.de/en/barcelona-architecture-buildings.html" rel="external"><cite>Barcelona.de</cite></a>.</small></p>
+        </aside>
+        <!--END SIDEBAR CONTENT-->
+        <footer>
+            <p><small>&copy; Copyright All About Gaudi<small></p>
+        </footer>
+    </div>
+
+    <a href="../../index.html">Return to Landing Page</a>
+</body>
+</html>

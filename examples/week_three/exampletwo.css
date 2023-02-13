@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+
+body {
+    background-color: rgb(151, 151, 255);
+}
+
+#gaudi, #sagarda-familia {
+    font-size: 2em;
+}
+
+article.architect {
+    color: red;
+}

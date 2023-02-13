@@ -1,0 +1,23 @@
+li:first-child {
+    color: red;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:focus {
+    color: purple;
+}
+
+a:hover {
+    color:green;
+}
+
+a:active {
+    color: blue;
+}

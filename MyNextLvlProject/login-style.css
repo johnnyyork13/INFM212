@@ -1,0 +1,143 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#colContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#leftCol, #rightCol {
+    margin: 20px;
+    width: 600px;   
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.colContainer {
+    border: var(--border);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.formContainer input {
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: var(--border);
+    margin: 10px;
+    padding-left: 20px;
+}
+
+#rightCol .formContainer {
+    position: relative;
+}
+
+.formContainer input:focus {
+    outline: none;
+    border: 2px solid var(--text-color);
+}
+
+.formContainer div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.formContainer p {
+    align-self: flex-start;
+    font-size: .8em;
+}
+
+#rightCol p {
+    margin-left: 10%;
+}
+
+.required:before {
+    content: " *";
+    color: red;
+}
+
+#notification {
+    visibility: hidden;
+    left: 101%;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#notification li {
+    color: red;
+    margin-left: -40px;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    border: var(--border);
+    background-color: var(--background-color);
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #colContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #leftCol, #rightCol {
+        width: 400px;
+    }
+
+    #rightCol {
+        height: 600px;
+    }
+
+    #notification {
+        left: 50%;
+        top: 63%;
+    }
+}

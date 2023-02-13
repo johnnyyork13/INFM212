@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchors</title>
+</head>
+<body>
+    <h1>How to Use Anchors</h1>
+    <article>
+        <header>
+            <h1>Frequently Asked Questions</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#questions-01">Can an id have more than one word?</a></li>
+                    <li><a href="#questions-02">Can visitors bookmark anchor links?</a></li>
+                    <li><a href="#questions-03">My anchor link isn't working. What am I doing wrong?</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2 id="questions-01">Can an id have more than one word?</h2>
+        <p>Yes, your ids can have more than one word as long as there are no spaces. Separate each word with a dash instead.</p>
+        <h2 id="questions-02">Can visitors bookmark anchor links?</h2>
+        <p>Yes, they can! And when they visit that link, the browser will jump down to the anchor as expected. Visitors can share the link with others, too, so all the more
+            reason to choose meaningful anchor names. 
+        </p>
+        <h2 id="questions-03">My anchor link isn't working. What am I doing wrong?</h2>
+        <p>The problem could be a few things. Firs, double-check that you added an id (without "#") to the element your link should point to.
+            Also, be sure that the anchor in your link <em>is</em> preceded by "#" and that it matches the anchor id.
+        </p>
+    </article>
+
+    <a href="../../index.html">Return to Landing Page</a>
+</body>
+</html>

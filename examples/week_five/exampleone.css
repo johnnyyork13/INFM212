@@ -1,0 +1,56 @@
+html {
+    width: 100vw;
+    height: 90vh;
+}
+
+body {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "one two three"
+    "footer footer footer";
+    gap: 20px;
+}
+
+.mainContainer > * {
+    background-color: grey;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+#left {
+    grid-area: one;
+    text-align: left;
+}
+
+#center {
+    grid-area: two;
+    text-align: center;
+}
+
+#right {
+    grid-area: three;
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: footer;
+    text-align: center;
+}

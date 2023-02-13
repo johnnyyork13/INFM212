@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MyNextLvlProject/stylesheet.css">
+    <link rel="stylesheet" href="login-style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img id="logo" alt="MyNextLvl Logo" src="./images/logo.jpg"></a>
+        <nav id="mainNav">
+            <ul>
+                <li class="navButtonContainer">
+                    <div class="navButton">About Us <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li><a href="./about/about.html">About MyNextLvl</a></li>
+                            <li><a href="./about/news.html">News and Events</a></li>
+                            <li><a href="./about/contribute.html">How to Contribute</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Health Conditions <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li><a href="./conditions/ashtma.html">Asthma</a></li>
+                            <li><a href="./conditions/diabetes.html">Diabetes</a></li>
+                            <li><a href="./conditions/seizures.html">Seizures</a></li>
+                            <li><a href="./conditions/hyperthyroidism.html">Hyperthyroidism</a></li>
+                            <li><a href="./conditions/hypothyroidism.html">Hypothyroidism</a></li>
+                            <li><a href="./conditions/sicklecell.html">Sickle Cell Anemia</a></li>
+                            <li><a href="./conditions/cysticfibrosis.html">Cystic Fibrosis</a></li>
+                            <li><a href="./conditions/gastro.html">Gastrointestinal Disorders</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Resources <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li><a href="./resources/local.html">Local Resources</a></li>
+                            <li><a href="./resources/outside.html">Outside Resources</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Reminders <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li><a href="./reminders/appointment.html">Doctor Appointment</a></li>
+                            <li><a href="./reminders/refill.html">Medication Refill</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="login">
+            <img id="loginImg" alt="Login Outline" src="./images/login.png">
+            <div id="loginBtn"><a href="./login.html">Log In</a></div>
+        </div>
+        <div id="hamburgerMenu">
+            <img id="hamburgerImg" alt="Hamburger Menu" src="./images/hamburger.png">
+        </div>
+        <div id="mobileMenuContainer">
+            <div class="mobileMenu">
+                <h3 class="mobileMenuHeader">About Us</h6>
+                    <ul>
+                        <li><a href="./about/about.html">About MyNextLvl</a></li>
+                        <li><a href="./about/news.html">News and Events</a></li>
+                        <li><a href="./about/contribute.html">How to Contribute</a></li>
+                    </ul>
+            </div>
+            <div class="mobileMenu">
+                <h3 class="mobileMenuHeader">Health Conditions</h3>
+                <ul>
+                    <li><a href="./conditions/ashtma.html">Asthma</a></li>
+                    <li><a href="./conditions/diabetes.html">Diabetes</a></li>
+                    <li><a href="./conditions/seizures.html">Seizures</a></li>
+                    <li><a href="./conditions/hyperthyroidism.html">Hyperthyroidism</a></li>
+                    <li><a href="./conditions/hypothyroidism.html">Hypothyroidism</a></li>
+                    <li><a href="./conditions/sicklecell.html">Sickle Cell Anemia</a></li>
+                    <li><a href="./conditions/cysticfibrosis.html">Cystic Fibrosis</a></li>
+                    <li><a href="./conditions/gastro.html">Gastrointestinal Disorders</a></li>
+                </ul>
+            </div>
+            <div class="mobileMenu">
+                <h3 class="mobileMenuHeader">Resources</h3>
+                <ul>
+                    <li><a href="./resources/local.html">Local Resources</a></li>
+                    <li><a href="./resources/outside.html">Outside Resources</a></li>
+                </ul>
+            </div>
+            <div class="mobileMenu">
+                <h3 class="mobileMenuHeader">Reminders</h3>
+                <ul>
+                    <li><a href="./reminders/appointment.html">Doctor Appointment</a></li>
+                    <li><a href="./reminders/refill.html">Medication Refill</a></li>
+                </ul>
+            </div>
+            <div class="mobileMenu">
+                <h3 class="mobileMenuHeader">Login</h3>
+                <ul>
+                    <li><a href="./login.html">Login to Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Log In</h1>
+        <div id="colContainer">
+            <div id="leftCol">
+                <h2>Please Log In</h2>
+                <div class="colContainer">
+                    <div class="formContainer">
+                        <form id="userForm">
+                            <input type="email" id="email" placeholder="Email Address">
+                            <input type="password" id="password" placeholder="Password">
+                            <div>
+                                <p class="required">Required Information</p>
+                                <p class="required">Forgot Password?</p>
+                            </div>
+                                </div>
+                            
+                                <button type="button">Submit</button>
+                        </form>
+                </div>
+            </div>
+            <div id="rightCol">
+                <h2>Create an Account</h2>
+                <div class="colContainer">
+                    <div class="formContainer">
+                        <form id="newUserForm">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                            <input type="email" id="newEmail" placeholder="Email Address" required>
+                            <input type="password" id="newPassword" placeholder="Password" required>
+                            <input type="password" id="newPasswordConfirm" placeholder="Re-enter Password" required>
+                            <p class="required">Required Information</p>
+                            <div id="notification">
+                                <h5>Passwords must match and include the following: </h5>
+                                <ul>
+                                    <li id="matchChar">passwords match</li>
+                                    <li id="countChar">8-16 characters</li>
+                                    <li id="specialChar">a special character</li>
+                                    <li id="numberChar">a number</li>
+                                </ul>
+                            </div>
+                                </div>
+                                <a href="index.html"><button type="submit">Submit</button></a>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="footerLink"><a href="/MyNextLvlProject/faq.html">FAQ</a></li>
+            <li class="footerLink"><a href="/MyNextLvlProject/contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="login-javascript.js"></script>
+</body>
+</html>
