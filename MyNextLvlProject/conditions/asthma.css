@@ -1,9 +1,11 @@
 main {
     width: auto;
+	height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
+	padding-bottom: 50px;
 }
 
 .mainContainer {
