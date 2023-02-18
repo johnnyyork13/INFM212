@@ -1,0 +1,83 @@
+main {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    padding-bottom: 10%;
+}
+
+.mainContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "one two three"
+    "four four four"
+    "five five five"
+    "six six six"
+    "seven seven seven" ;
+    gap: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+#imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: var(--border);
+    height: 80%;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven";
+    }
+}

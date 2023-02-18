@@ -1,0 +1,78 @@
+main {
+    height: fit-content;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "one two three"
+    "four four four"
+    "four four four"
+    "four four four"
+    "five five five";
+    gap: 40px;
+    width: 80%;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    border: var(--border);
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+#imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "four"
+        "four"
+        "four"
+        "four"
+        "four"
+        "five";
+    }
+}
