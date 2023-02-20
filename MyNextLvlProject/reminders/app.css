@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.mainContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,.5fr);
+    grid-template-areas: 
+    "one two"
+    "one three" ;
+    gap: 40px;
+}
+
+.mainBody {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#mainBodyBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: white;
+}
+.container {
+    text-align: center;
+}
+
+.box {
+    text-align: left;
+    border: var(--border);
+    height: 100%;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.mainInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+    border: var(--border);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.box button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--background-color);  
+    color: white;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+    height: 70%;
+}
+
+#three {
+    grid-area: three;
+    height: 100%;
+}
+
+#boxTwo {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+        padding-bottom: 130px;
+    }
+
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three";
+        gap: 100px;
+    }
+}

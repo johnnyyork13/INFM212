@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .mainContainer {

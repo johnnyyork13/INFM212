@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h2>Using Forms</h2>
+        <nav>
+            <div class="dropDown">
+                <div class="button">About Us</div>
+                <div class="drop">
+                    <p>Item One</p>
+                    <p>Item Two</p>
+                    <p>Item Three</p>
+                </div>
+            </div>
+            <div class="dropDown">
+                <div class="button">Cool Products</div>
+                <div class="drop">
+                    <p>Item One</p>
+                    <p>Item Two</p>
+                    <p>Item Three</p>
+                    <p>Item Four</p>
+                    <p>Item Five</p>
+                    <p>Item Six</p>
+                    <p>Item Seven</p>
+                </div>
+            </div>
+            <div class="dropDown">
+                <div class="button">Cool Services</div>
+                <div class="drop">
+                    <p>Item One</p>
+                    <p>Item Two</p>
+                    <p>Item Three</p>
+                    <p>Item Four</p>
+                    <p>Item Five</p>
+                </div>
+            </div>
+            <div class="dropDown">
+                <div class="button">Contact Us</div>
+                <div class="drop">
+                    <p>Item One</p>
+                    <p>Item Two</p>
+                    <p>Item Three</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2>Existing Users</h2>
+            <h3>Welcome! Please login to your account!</h3>
+            <form id="leftForm" novalidate>
+                
+                <div class="inputContainer">
+                    <label for="">Email:</label>
+                    <input type="text" class="inputBox loginBox" placeholder="Email Address"></div>
+                <div class="inputContainer">
+                    <label for="">Password:</label>
+                    <input type="password" class="inputBox loginBox" placeholder="Password"></div>
+                <button type="button" id="loginBtn">Login</button>
+            </form>
+        </aside>
+        <section>
+            <h2>New Users</h2>
+            <h3>Create an Account:</h3>
+            <form id="rightForm" novalidate>
+                <div class="inputContainer">
+                    <label for="">First Name:</label>
+                    <input type="text" class="inputBox createBox" placeholder="First Name"></div>
+                <div class="inputContainer">
+                    <label for="">Last Name:</label>
+                    <input type="text" class="inputBox createBox" placeholder="Last Name"></div>
+                <div class="inputContainer">
+                    <label for="">Email:</label>
+                    <input type="email" class="inputBox createBox" placeholder="Email"></div>
+                <div class="inputContainer">
+                    <label for="">Password:</label>
+                    <input type="password" class="inputBox createBox" placeholder="Password">
+                </div>
+                <div class="inputContainer">
+                    <label for="">Confirm Password:</label>
+                    <input type="password" class="inputBox createBox" placeholder="Confirm Password">
+                </div>
+                <button type="button" id="createBtn">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Johnny York - Using Forms 2023
+    </footer>
+
+    <script src="javascript.js"></script>

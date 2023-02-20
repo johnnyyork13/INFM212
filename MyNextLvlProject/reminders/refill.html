@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Medication Refill</title>
+</head>
+<body>
+    <script src="../header.js"></script>
+<main>
+    <h2>Medication Refill Reminder</h2>
+    <div class="mainContainer">
+        <div class="container" id="one">
+            <h3>Set Your Reminder</h3>
+            <div class="box mainInput">
+                <div class="inputBox">
+                    <label for="">Date</label>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <label for="">Medication</label>
+                    <input type="text" placeholder="Please Select Your Medication">
+                </div>
+                <button type="button" onclick="window.location.href='medication-refilled.html'">Set</button>
+            </div>
+        </div>
+        <div class="container" id="two">
+            <h3>Upcoming Reminder</h3>
+            <div class="box" id="boxTwo">
+                <p>Medication 1 <br><br>
+                Date: 01/01/22 ... Time: 12:00 pm ...</p>
+                <button>Edit</button>
+            </div>
+        </div>
+        <div class="container" id="three">
+            <h3>Past Reminder</h3>
+            <div class="box">
+                <p>Date: 08/01/22 ... Time: 12:00 pm ...</p>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="../footer.js"></script>
+    <script src="../javascript.js"></script>
+</body>
+</html>

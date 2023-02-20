@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.mainContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 80%;
+    width: 100%;
+    border: var(--border);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dateLabel {
+    font-weight: bolder;
+}
+
+#date {
+    width: 400px;
+    height: 100px;
+    font-size: 2.2em;
+    padding-left: 150px;
+    border: var(--border);
+    border-radius: 40px;
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.radioBox {
+    border: var(--border);
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 30px;
+    align-items: center;
+}
+
+.inputBox button {
+    width: 130px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: white;
+}
+
+.inputBox button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    #date {
+        width: 80%;
+        font-size: 1em;
+        padding-left: 10px;
+    }
+
+    .box {
+        padding-bottom: 20px;
+    }
+}
+

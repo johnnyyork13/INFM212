@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Doctor Appointment Reminder</title>
+</head>
+<body>
+    <script src="../header.js"></script>
+<main>
+    <h2>Doctor Appointment Reminder</h2>
+    <div class="mainContainer">
+        <div class="container" id="one">
+            <h3>Set Your Reminder</h3>
+            <div class="box mainInput">
+                <div class="inputBox">
+                    <label for="">Date</label>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <label for="">Time</label>
+                    <input type="time">
+                </div>
+                <div class="inputBox">
+                    <label for="">Doctor</label>
+                    <input type="text" placeholder="Please Select Your Doctor">
+                </div>
+                <button type="button" onclick="window.location.href='doctor-scheduled.html'">Set</button>
+            </div>
+        </div>
+        <div class="container" id="two">
+            <h3>Upcoming Reminder</h3>
+            <div class="box" id="boxTwo">
+                <p>Doctor 1 <br><br>
+                Date: 01/01/22 ... Time: 12:00 pm ...</p>
+                <button>Edit</button>
+            </div>
+        </div>
+        <div class="container" id="three">
+            <h3>Past Reminder</h3>
+            <div class="box">
+                <p>Date: 08/01/22 ... Time: 12:00 pm ...</p>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="../footer.js"></script>
+    <script src="../javascript.js"></script>
+</body>
+</html>

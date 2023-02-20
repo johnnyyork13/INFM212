@@ -12,25 +12,35 @@ function resetSlides() {
 resetSlides();
 
 window.addEventListener('load', function(){
-    function moveSlide(amount) {
-        for (i = 0; i < slides.length; i++) {
-            if ((parseFloat(slides[6].style.left + parseFloat(amount)) >= parseFloat("70%") && 
-            (parseFloat(slides[0].style.left) + parseFloat(amount)) <= parseFloat("0")))
-            {
-                console.log(parseFloat(slides[0].style.left));
+    function moveLeft(amount) {
+        let originalPos;
+        let startSlide = parseFloat(slides[0].style.left);
+        let endSlide = parseFloat(slides[slides.length-1].style.left);
+        if (startSlide <= "0" && endSlide > "70" ) {
+            for (i = 0; i < slides.length; i++) {
                 let e = slides[i];
-                let startPos = parseFloat(e.style.left);
-                console.log(slides[6].style.left);
-                e.style.left = `${startPos - amount}%`; 
-            } 
-            
+                originalPos = parseFloat(e.style.left);
+                e.style.left = `${originalPos - amount}%`; 
+            }
+        } 
+    }
+    function moveRight(amount) {
+        let originalPos;
+        let startSlide = parseFloat(slides[0].style.left);
+        let endSlide = parseFloat(slides[slides.length-1].style.left);
+        if (startSlide < "0" && endSlide >= "70" ) {
+            for (i = 0; i < slides.length; i++) {
+                let e = slides[i];
+                originalPos = parseFloat(e.style.left);
+                e.style.left = `${originalPos + amount}%`; 
+            }
         }
     }
     
     previous.addEventListener('click', function(){
-        moveSlide(10);
+        moveLeft(10);
     })
     next.addEventListener('click', function(){
-        moveSlide(-10);
+        moveRight(10);
     })
 })
