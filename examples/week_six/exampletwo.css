@@ -1,0 +1,93 @@
+html {
+    width: 100%;
+    height: 100%;
+    --bg-color: #fecdd3;
+    --box-color: #e11d48;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, section, aside, footer {
+    background-color: var(--box-color);
+}
+
+header {
+    width: 90%;
+    height: 10%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav p:hover {
+    cursor: pointer;
+    color: #9f1239;
+}
+
+.dropDown {
+    background-color: #fecdd3;
+    height: 100%;
+    width: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.dropDown:hover .drop, .dropDown:hover .button {
+    visibility: visible;
+    background-color: #fb7185;
+}
+
+.drop {
+    visibility: hidden;
+    background-color: white;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section {
+    width: 40%;
+    height: 100%;
+}
+
+aside {
+    width: 50%;
+    height: 100%;
+}
+
+footer {
+    margin-top: 1%;
+    width: 90%;
+    height: 5%;
+}
+
