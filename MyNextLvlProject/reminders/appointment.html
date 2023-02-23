@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet-login.css">
     <link rel="stylesheet" href="app.css">
     <title>Doctor Appointment Reminder</title>
 </head>
 <body>
-    <script src="../header.js"></script>
+    <script src="../header-login.js"></script>
 <main>
     <h2>Doctor Appointment Reminder</h2>
     <div class="mainContainer">
@@ -26,7 +26,12 @@
                 </div>
                 <div class="inputBox">
                     <label for="">Doctor</label>
-                    <input type="text" placeholder="Please Select Your Doctor">
+                    <select>
+                        <option value="">Doctor 1</option>
+                        <option value="">Doctor 2</option>
+                        <option value="">Doctor 3</option>
+                        <option value="">Doctor 4</option>
+                    </select>
                 </div>
                 <button type="button" onclick="window.location.href='doctor-scheduled.html'">Set</button>
             </div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet-login.css">
+    <link rel="stylesheet" href="insurance.css">
+    <title>Insurance Information</title>
+</head>
+<body>
+    <script src="../header-login.js"></script>
+    <main>
+        <h2>Medical Insurance Information</h2>
+        <div class="mainContainer">
+            <div class="container">
+                <h3>Enter Insurance Information</h3>
+                <div class="box one">
+                    <input type="text" placeholder="Insurance Provider">
+                    <input type="text" placeholder="Policy Number">
+                    <input type="text" placeholder="Group Number">
+                </div>
+            </div>
+            <div class="container">
+                <h3>Upload Image of Insurance Card</h3>
+                <div class="box two">
+                    <div class="card cardOne">
+                        <img id="cameraFront" class="camera" src="../images/camera.png">
+                        <img id="cardFront" src="../images/insurance-front.png">
+                        <p id="pFront">Front of Insurance Card</p>
+                        <button id="frontBtn">Upload image</button>
+                    </div>
+                    <div class="card">
+                        <img id="cameraBack" class="camera" src="../images/camera.png">
+                        <img id="cardBack" src="../images/insurance-back.png">
+                        <p id="pBack">Back of Insurance Card</p>
+                        <button id="backBtn">Upload image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="saveChanges()">Submit/Edit</button>
+    </main>
+    <script src="../footer.js"></script>
+    <script src="../javascript.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

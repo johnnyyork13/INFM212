@@ -1,0 +1,97 @@
+main {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border-radius: 30px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box input {
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border: var(--border);
+}
+
+.one {
+    border: var(--border);
+}
+
+.cardOne {
+    margin-bottom: 2%;
+}
+
+.card {
+    position: relative;
+    border: var(--border);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.card p, .card button {
+    position: absolute;
+    bottom: 5px;
+}
+
+.card button {
+    border: var(--border);
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: white;
+    height: 30px;
+    width: 120px;
+}
+
+.card p {
+    margin-bottom: 35px;
+}
+
+.camera {
+    position: absolute;
+    top: 15%;
+}
+
+#cardFront, #cardBack {
+    visibility: hidden;
+    position: absolute;
+    top: 1%;
+}
+
+main > button {
+    border: var(--border);
+    background-color: var(--background-color);
+    height: 30px;
+    width: 120px;
+    color: white;
+    border-radius: 20px;
+}

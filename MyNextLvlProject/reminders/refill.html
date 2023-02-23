@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet-login.css">
     <link rel="stylesheet" href="app.css">
     <title>Medication Refill</title>
 </head>
 <body>
-    <script src="../header.js"></script>
+    <script src="../header-login.js"></script>
 <main>
     <h2>Medication Refill Reminder</h2>
     <div class="mainContainer">
@@ -22,7 +22,12 @@
                 </div>
                 <div class="inputBox">
                     <label for="">Medication</label>
-                    <input type="text" placeholder="Please Select Your Medication">
+                    <select>
+                        <option value="">Medication 1</option>
+                        <option value="">Medication 2</option>
+                        <option value="">Medication 3</option>
+                        <option value="">Medication 4</option>
+                    </select>
                 </div>
                 <button type="button" onclick="window.location.href='medication-refilled.html'">Set</button>
             </div>

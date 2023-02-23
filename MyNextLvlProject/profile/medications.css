@@ -1,0 +1,43 @@
+main {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.box {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    border: var(--border);
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--border);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#submitBtn {
+    color: white;
+    background-color: var(--background-color);
+    width: 120px;
+    height: 30px;
+    border: var(--border);
+    border-radius: 20px;
+    margin-top: 20px;
+}

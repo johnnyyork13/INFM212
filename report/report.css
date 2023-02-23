@@ -5,10 +5,14 @@
     align-items: center;
 }
 
-img {
-    height: auto;
-    width: 70%;
-    margin-top: 30px;
+#mainSection > ol {
+    width: 80%;
+    padding: 20px;
+}
+
+#mainSection > ol > li {
+    font-size: 1.3em;
+    line-height: 200%;
 }
 
 #returnHome {
