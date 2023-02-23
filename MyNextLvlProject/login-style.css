@@ -29,6 +29,11 @@ form {
     height: 100%;
 }
 
+#forgotLink {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .colContainer {
     border: var(--border);
     border-radius: 40px;

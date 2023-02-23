@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="forgot.css">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <script src="header.js"></script>
+    <script>
+        function notify(){
+            alert("Password reset email has been sent. Click OKAY to return to login page.")
+            window.location.href = "login.html";
+        }
+    </script>
+    <main>
+        <h2>Reset Password</h2>
+        <h3>Please Enter Your Recovery Email Address</h3>
+        <div class="box">
+            <input type="email" placeholder="Email Address">
+            <button onclick="notify()">Submit</button>
+        </div>
+    </main>
+    <script src="footer.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
