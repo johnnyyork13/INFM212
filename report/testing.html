@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../main.css">
-    <link rel="stylesheet" type="text/css" href="report.css">
-    <title>User Task Analysis</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="testing.css">
+    <title>User Testing and Evaluation</title>
 </head>
 <body>
     <header>
-        <h1>User Task Analysis</h1>
+        <h1>Welcome to My Landing Page!</h1>
         <nav>
             <div id="textbookNav" class="navDiv">Textbook Examples
                 <div id="textbookDiv">
@@ -63,6 +63,7 @@
                             <li class="weekLi"><a href="../examples/week_six/examplefour.html">Example Four</a></li>
                             <li class="weekLi"><a href="../examples/week_six/examplefive.html">Example Five</a></li>
                         </ol>
+                        
                     </ul>
                 </div>
             </div>
@@ -89,31 +90,100 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section id="mainSection">
             <h2>MyNextLvl Task List</h2>
             <ol>
                 <li>Kita wants to create an account.</li>
+                    <ul>
+                        <li>I was able to simulate account creation on the frontend, but there needs to be a database and backend services in order
+                            to faciliate true account creation functionality. 
+                        </li>
+                        <li>Currently, when the user clicks on the create account button, the user is directed to the HIPAA agreement page and a 
+                            placeholder account is displayed. </li>
+                    </ul>
                 <li>Kita wants to access her medical condition information.</li>
+                    <ul>
+                        <li>I was able to include all of the medical information on the website. All Kita must do is click the health conditions
+                            tab to view the relevant health information. 
+                        </li>
+                    </ul>
                 <li>Kita would like local and non-local resources to be available.</li>
+                    <ul>
+                        <li>I have included pages for both local and non-local resources. The prototype did not include any relevant data for 
+                            me to provide detailed information, but the pages are present for future implementation. 
+                        </li>
+                    </ul>
                 <li>Kita would like to be able to cancel and reschedule her doctor's appointments and reminders.</li>
+                    <ul>
+                        <li>Kita can do this by clicking on the reminder dropdown list in the navigation bar and selecting 'Doctor Appointment'.
+                        </li>
+                    </ul>
                 <li>Kita would like to completely remove doctor's appointments and reminders.</li>
+                    <ul>
+                        <li>This can be accessed after Kita 
+                            logs in and clicks the reminders dropdown list in the navigation bar and selecting 'Doctor Appointment'. 
+                        </li>
+                    </ul>
                 <li>Kita would like to add/edit/remove her prescription reminders.</li>
+                    <ul>
+                        <li>The functionality to add/edit/remove prescription reminders is displayed on the medication page. To access this she must
+                            be logged in. Then Kita can navigate to the reminders dropdown list in the navigation bar and select 'Medication Refill'.
+                        </li>
+                    </ul>
                 <li>Kita would like to add/edit/remove doctors from her user profile.</li>
+                    <ul>
+                        <li>I have included a page to allow Kita to add and edit her primary care physician. The page is located in her user profile under 'Primary Care Physician'.
+                    </ul>
                 <li>Henry would like to add/edit/remove his insurance information.</li>
+                    <ul>
+                        <li>Henry is able to access and edit his insurance information by logging into his profile and selecting the 'Medical Insurance Information' button. </li>
+                    </ul>
                 <li>Henry would like to add/edit/remove his emergency contact information.</li>
+                    <ul>
+                        <li>Henry can view and edit his emergency contact information by logging into his profile and selecting 'Emergency Contact Information'.</li>
+                    </ul>
                 <li>Henry wants information about local affordable healthcare.</li>
+                    <ul>
+                        <li>I was able to include a local and non-local resource link in the 'Resources' dropdown list. Currently, there was no data provided
+                            by the prototype that explicitly states it is for affordable healthcare, but this functionality can be added easily to the resources section in the future. 
+                        </li>
+                    </ul>
                 <li>Henry wants information about HIPAA.</li>
+                    <ul>
+                        <li>The prototype provided a HIPAA agreement section when a new user is creating an account. There is currently no direct link 
+                            to view HIPAA regulations and standards. For now, Henry will have to navigate to an external site to view this.
+                        </li>
+                    </ul>
                 <li>Henry wants to add or edit his allergy information.</li>
+                    <ul>
+                        <li>Henry can access and edit his allergy information by logging in and selecting the 'Allergies Information' button on his profile page.</li>
+                    </ul>
+                <li>Summary:</li>
+                    <ul>
+                        <li>Most of the requested functionality has been implemented on the frontend, but none of the changes a user makes will persist 
+                            until a working backend with a database is implemented.
+                        </li>
+                        <li>
+                            There needs to be a HIPAA regulation information page implemented for the user to access.
+                        </li>
+                        <li>
+                            The local and non-local resources should be updated to include affordable healthcare.
+                        </li>
+                        <li>
+                            All of the user account functionality is currently a test account. Once a backend is established, 
+                            the user will be able to create and edit account specific details.
+                        </li>
+                    </ul>
             </ol>
             <br>
-            <a id="returnHome" href="../index.html">Return to Landing Page</a>
+            
             
         </section>    
+        <a id="returnHome" href="../index.html">Return to Landing Page</a>
     </main>
     <footer>
-        <p>Johnny York - 2023</p>
+        Johnny York - 2023
     </footer>
 
     <script src="../javascript.js"></script>
